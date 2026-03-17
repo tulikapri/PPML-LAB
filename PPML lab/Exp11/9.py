@@ -1,0 +1,16 @@
+import pandas as pd 
+# Create a DataFrame with numerical data 
+data = { 
+    'Math': [90, 85, 80, 95], 
+    'Science': [88, 82, 85, 90], 
+    'English': [78, 75, 80, 85] 
+} 
+df = pd.DataFrame(data) 
+ 
+print("DataFrame:") 
+print(df) 
+ 
+# Calculate correlation 
+correlation = df.corr() 
+print("\nCorrelation Matrix:") 
+print(correlation)
